@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeBlink</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="flex ai-center">
+      <a href=""><img src="./images/Vector.png" alt="Logo" /></a>
+      <ul class="flex pages d-none-mobile">
+        <li><a href="#">Информирај се</a></li>
+        <li><a href="#discussion">Дискусии</a></li>
+        <li><a href="#contact">Контакт</a></li>
+        <li id="profile"><a href="#profile">Профил</a></li>
+      </ul>
+      <ul class="flex right-side-nav d-none-mobile">
+        <li id="signOutBtn">
+          <button>
+            <i class="fa-solid fa-right-from-bracket"></i> Одјави се
+          </button>
+        </li>
+        <li id="profileNavbar">
+          <img id="profileImgSmall" src="" alt="" />
+        </li>
+        <li>
+          <button id="signInBtn">
+            <i class="fa-solid fa-user"></i> Најaви се
+          </button>
+        </li>
+        <li>MK | AL</li>
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+      </ul>
+
+      <ul class="sidebar">
+        <li id="xBtn">
+          <a><i class="fa-solid fa-xmark"></i></a>
+        </li>
+        <li><a href="#">Информирај се</a></li>
+        <li><a href="#discussion">Дискусии</a></li>
+        <li><a href="#contact">Контакт</a></li>
+        <li id="profileSB"><a href="#profile">Профил</a></li>
+        <li id="signOutBtnSB">
+          <button>
+            <i class="fa-solid fa-right-from-bracket"></i> Одјави се
+          </button>
+        </li>
+        <li id="profileNavbarSB">
+          <img id="profileImgSmallSB" src="" alt="" />
+        </li>
+        <li>
+          <button id="signInBtnSB">
+            <i class="fa-solid fa-user"></i> Најaви се
+          </button>
+        </li>
+        <li>MK | AL</li>
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+      </ul>
+      <i id="barsBtn" class="fa-solid fa-bars"></i>
+    </nav>
+    <!-- HOME PAGE -->
+    <section id="homePage">
+      <!-- VIDEO -->
+      <video
+        src="./videos/Central Cee x Dave - Sprinter [Music Video].mp4"
+        controls
+      ></video>
+
+      <!-- MAIN CONTENT -->
+      <div class="wrapper-80 padding-4rem main-content">
+        <h1>Информирај се и заштити се</h1>
+        <div class="flex-container flex flex-column ai-stretch">
+          <div class="flex-item">
+            <div class="flex-inner purple">
+              <div class="heading align-center-tablet flex js-spacebetween">
+                <h2>Научи сè што треба да знаеш</h2>
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <button id="purpleBtn">Дознај повеќе</button>
+            </div>
+          </div>
+          <div class="flex-item">
+            <div class="flex-inner blue">
+              <div class="heading align-center-tablet flex js-spacebetween">
+                <h2>Вклучи се во дискусија</h2>
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <button id="blueBtn">Дознај повеќе</button>
+            </div>
+          </div>
+          <div class="flex-item">
+            <div class="flex-inner green">
+              <div class="heading align-center-tablet flex js-spacebetween">
+                <h2>Следи го својот напредок</h2>
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <button id="greenBtn">Дознај повеќе</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTENT PAGE -->
+    <section id="contentPage">
+      <div class="wrapper-80 padding-4rem-top content">
+        <h1>Сè што треба да знаеш</h1>
+        <div class="flex names js-spacearound ai-center hidden">
+          <h2 class="active-filter-content cursor-pointer" id="video">Видеа</h2>
+          <h2 class="cursor-pointer" id="statii" class="hidden">Статии</h2>
+          <h2 class="cursor-pointer" id="upatstva" class="hidden">Упатства</h2>
+        </div>
+        <div class="flex names-mobile js-spacearound ai-center d-none-web">
+          <i id="leftArrow" class="fa-solid fa-arrow-left content-arrows"></i>
+          <h2 id="video">Видеа</h2>
+          <h2 id="statii" class="hidden">Статии</h2>
+          <h2 id="upatstva" class="hidden">Упатства</h2>
+          <i
+            id="rightArrow"
+            class="fa-solid fa-arrow-right content-arrows d-none-web"
+          ></i>
+        </div>
+      </div>
+
+      <div class="filters" id="filters">
+        <button id="najgledani">Најгледани</button>
+        <button id="aktuelno">Актуелно</button>
+        <button id="najnovi">Најнови</button>
+        <button id="safeblink">SafeBlink</button>
+      </div>
+
+      <div class="wrapper-80 padding-4rem-bottom content">
+        <div
+          id="cardContentContainer"
+          class="cards-container flex flexwrap"
+        ></div>
+      </div>
+    </section>
+    <!-- SIGN IN PAGE -->
+    <section id="signInPage">
+      <div class="wrapper-80 padding-4rem najavise">
+        <h1>Придружи ни се</h1>
+        <div class="flex flex-column">
+          <div class="leftside fb-50">
+            <div class="width-60">
+              <div class="buttons">
+                <button class="flex ai-center najaviseBtn">
+                  <i class="fa-brands fa-google"></i>
+                  <p>Продолжи со Google</p>
+                </button>
+                <button class="flex ai-center najaviseBtn">
+                  <i class="fa-brands fa-apple"></i>
+                  <p>Продолжи со Аpple</p>
+                </button>
+                <button class="flex ai-center najaviseBtn">
+                  <i class="fa-brands fa-tiktok"></i>
+                  <p>Продолжи со TikTok</p>
+                </button>
+              </div>
+
+              <div class="ili-linija-div">
+                <hr class="ili-linija" />
+                <span>или</span>
+                <hr class="ili-linija" />
+              </div>
+
+              <div class="form">
+                <form id="logInForm">
+                  <label for="username">Корисничко име*</label>
+                  <input
+                    id="username"
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                  />
+                  <label for="password">Лозинка*</label>
+                  <div class="password-wrapper">
+                    <input
+                      id="password"
+                      type="password"
+                      id="password"
+                      name="password"
+                      placeholder="Password"
+                    />
+                    <span class="toggle-password" id="togglePassword"
+                      ><i class="fa-solid fa-eye"></i
+                    ></span>
+                  </div>
+                  <div class="flex js-spacebetween margin-bottom-3 white-color">
+                    <div class="rememberme flex ai-center">
+                      <i id="squareBox" class="fa-regular fa-square"></i>
+                      <p>Запомни ме</p>
+                    </div>
+                    <div class="forgetpassword">
+                      <p>Ја заборави лозинката?</p>
+                    </div>
+                  </div>
+                  <button class="btnSubmit" type="submit">Најави се</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="rightside fb-50">
+            <img src="images/Screenshot 2023-05-27 at 19.45 1.png" alt="ss" />
+          </div>
+        </div>
+        <div id="modal">
+          <div class="modal-content">
+            <h1>Добредојде!</h1>
+            <h2>Успешно креиран профил</h2>
+            <button id="modalBtn">Продолжи кон Safeblink</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- DISCUSSION PAGE -->
+    <section id="discussionPage">
+      <div class="wrapper-80 padding-4rem discussions">
+        <h1>Табла за дискусии</h1>
+        <div class="discussions-container">
+          <div class="container-box new-discussion">
+            <input
+              disabled
+              id="newDiscussion"
+              type="text"
+              placeholder="Сподели искуство..."
+            />
+            <div class="content-box flex ai-center">
+              <img id="discussionBoxImg" src="./images/anonymous.jpg" alt="" />
+              <span id="discussionBoxSpan">Име Презиме</span>
+            </div>
+          </div>
+          <div id="discussionContainer"></div>
+        </div>
+      </div>
+    </section>
+    <!-- PROFILE PAGE -->
+    <section id="profilePage">
+      <div class="wrapper-80 padding-4rem profile">
+        <h1>Профил</h1>
+        <div class="profile-div flex flex-column">
+          <div class="image-left fb-33">
+            <div class="image-wrapper">
+              <img id="profileImgBig" src="" alt="profile" />
+              <p class="edit-img">Промени</p>
+            </div>
+          </div>
+          <div class="account-right flex fb-66 flex-column">
+            <div class="account-l fb-50">
+              <label for="username">Име и презиме / Корисничко име</label>
+              <div class="input-fields">
+                <input
+                  disabled
+                  id="usernameProfile"
+                  type="text"
+                  id="username"
+                />
+                <button>Промени</button>
+              </div>
+              <label for="email">Email адреса</label>
+              <div class="input-fields">
+                <input disabled id="emailProfile" type="email" id="email" />
+                <button id="emailEditBtn">Промени</button>
+                <div class="icons-edit">
+                  <i id="checkIcon" class="fa-solid fa-check"></i>
+                  <i id="cancelIcon" class="fa-solid fa-x"></i>
+                </div>
+              </div>
+              <label for="password">Лозинка</label>
+              <div class="input-fields">
+                <input
+                  disabled
+                  id="passwordProfile"
+                  type="password"
+                  id="password"
+                />
+                <button>Промени</button>
+              </div>
+            </div>
+            <div class="account-r fb-50">
+              <label for="yearbirth">Година на раѓање</label>
+              <div class="input-fields">
+                <input disabled id="yearOfBirth" type="number" id="yearbirth" />
+                <button id="birthYearEditBtn">Промени</button>
+                <div class="icons-edit">
+                  <i id="checkYearIcon" class="fa-solid fa-check"></i>
+                  <i id="cancelYearIcon" class="fa-solid fa-x"></i>
+                </div>
+              </div>
+              <label for="gender">Пол</label>
+              <div class="input-fields">
+                <input disabled id="gender" type="text" id="gender" />
+                <button>Промени</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="text-div flex js-spacebetween padding-1rem flex-column">
+            <p>Следи го својот Safeblink напредок!</p>
+            <p>Моментално ниво: Лорем ипсум</p>
+          </div>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="badges flex">
+          <div id="joinInBadge" class="badge-item fb-badge">
+            <i class="fa-solid fa-hand-fist"></i>
+            <br /><br /><br /><br /><br /><br /><br />
+            <p>Се придружи!</p>
+          </div>
+          <div id="videoBadge" class="badge-item fb-badge">
+            <i class="fa-solid fa-video"></i>
+            <br /><br /><br /><br /><br /><br /><br />
+            <p>Изгледани 5 видеа</p>
+          </div>
+          <div id="activityBadge" class="badge-item fb-badge">
+            <i class="fa-solid fa-pen-nib"></i>
+            <br /><br /><br /><br /><br /><br /><br />
+            <p>Активност во дискусија</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT PAGE -->
+    <section id="contactPage">
+      <div class="wrapper-80 padding-4rem contact">
+        <h1>КОНТАКТ</h1>
+        <h2>Побарај стручна помош</h2>
+        <div class="contact-item flex flex-column">
+          <div class="item-content fb-66">
+            <h3>Агенција за заштита на личните податоци</h3>
+            <p>
+              Лорем ипсум е едноставен модел на текст кој се користел во
+              печатарската индустрија. Лорем ипсум бил индустриски стандард кој
+              се користел како модел уште пред 1500 години, кога непознат
+              печатар зел кутија со букви и ги сложил на таков начин за да
+              направи примерок на книга.
+            </p>
+          </div>
+          <div class="item-link fb-33">
+            <a href="#">Линк</a>
+          </div>
+        </div>
+        <h2>Невладини организации</h2>
+        <div class="contact-item flex flex-column">
+          <div class="item-content fb-66">
+            <h3>NGO 1</h3>
+            <p>
+              Лорем ипсум е едноставен модел на текст кој се користел во
+              печатарската индустрија. Лорем ипсум бил индустриски стандард кој
+              се користел како модел уште пред 1500 години, кога непознат
+              печатар зел кутија со букви и ги сложил на таков начин за да
+              направи примерок на книга.
+            </p>
+          </div>
+          <div class="item-link fb-33">
+            <a href="#">Линк</a>
+          </div>
+        </div>
+        <div class="contact-item flex flex-column">
+          <div class="item-content fb-66">
+            <h3>NGO 2</h3>
+            <p>
+              Лорем ипсум е едноставен модел на текст кој се користел во
+              печатарската индустрија. Лорем ипсум бил индустриски стандард кој
+              се користел како модел уште пред 1500 години, кога непознат
+              печатар зел кутија со букви и ги сложил на таков начин за да
+              направи примерок на книга.
+            </p>
+          </div>
+          <div class="item-link fb-33">
+            <a href="#">Линк</a>
+          </div>
+        </div>
+        <div class="contact-item flex flex-column">
+          <div class="item-content fb-66">
+            <h3>NGO 3</h3>
+            <p>
+              Лорем ипсум е едноставен модел на текст кој се користел во
+              печатарската индустрија. Лорем ипсум бил индустриски стандард кој
+              се користел како модел уште пред 1500 години, кога непознат
+              печатар зел кутија со букви и ги сложил на таков начин за да
+              направи примерок на книга.
+            </p>
+          </div>
+          <div class="item-link fb-33">
+            <a href="#">Линк</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="padding-footer">
+      <div class="wrapper-80 flex js-spacebetween flex-column footer-box">
+        <div class="left">
+          <img src="./images/Vector (3).png" alt="white logo" />
+          <p class="ifes">
+            International Foundation for Electoral Systems (IFES)
+          </p>
+          <div class="flex js-spacebetween flex-column contact-box">
+            <p><i class="fa-solid fa-phone"></i>+389-2-312-2288</p>
+            <p><i class="fa-regular fa-envelope"></i>ifes.nmk@ifes.org</p>
+          </div>
+        </div>
+        <div class="center">
+          <a href="#">Информирај се</a>
+          <a href="#discussion">Дискусии</a>
+          <a href="#contact">Контакт - корисни линкови</a>
+          <a href="#">Закон за заштита на личните податоци</a>
+        </div>
+        <div class="right">
+          <p class="translate">MK | AL</p>
+          <div class="icons">
+            <a href="facebook.com" target="_blank"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="youtube.com" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="tiktok.com" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+
+          <p class="rights">© All Rights Reserved. | safeblink.mk</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./js/objects.js"></script>
+    <script type="module" src="./js/contentpage.js"></script>
+    <script type="module" src="./js/signinpage.js"></script>
+    <script type="module" src="./js/homepage.js"></script>
+    <script type="module" src="./js/profilepage.js"></script>
+    <script type="module" src="./js/discussionpage.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
