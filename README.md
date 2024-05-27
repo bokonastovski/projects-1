@@ -8,7 +8,39 @@
     <br>
     「 # Safe Web Experience Application
 
-This web application is designed to educate users on how to have a safe web experience. Follow the steps below to start the server and authenticate your access.
+Welcome to Safe Blink, a comprehensive web application dedicated to promoting safe web practices. Explore the features below to make the most out of your browsing experience.
+
+## Features
+
+### Discussions
+
+- **View Discussions**: Browse through existing discussions on safe web practices.
+- **Participate in Discussions**: Registered users can create new discussions and post comments.
+
+### Videos
+
+- **Watch Videos**: Access a library of educational videos on safe browsing.
+- **Comment on Videos**: Registered users can leave comments on videos to share insights and tips.
+
+### Badge System
+
+- **Earn Badges**: Users are rewarded with badges based on their activity:
+- _5 Videos Watched Badge_: Earned after watching at least 5 videos.
+
+### Registration and Login
+
+- **Account Management**: Users must register and log in to participate in discussions and comment on videos.
+
+### Profile Management
+
+- **Update Profile Information**: Users can manage their profile information, including birth date and email address.
+- **Badge Progress**: Track and upgrade badges based on user activities such as entering discussions and watching videos.
+
+### User Experience
+
+- **Video Filtering**: Filter video content for a tailored browsing experience.
+
+### And much more...
 
 ## Starting the Server
 
@@ -19,9 +51,16 @@ This web application is designed to educate users on how to have a safe web expe
    - Search for "Live Server" and install the extension.
 
 2. **Launch the Server**:
+
    - Open the project folder in Visual Studio Code.
    - Click the "Go Live" button located in the bottom right corner of the window.
-   - This will start a local server, and the application will be accessible.
+   - Alternatively, you can run the following command in the terminal:
+     ```bash
+     http-server
+     ```
+     This command assumes you have installed Live Server globally. If not, you can install it using npm: `npm install -g live-server`.
+
+   This will start a local server, and the application will be accessible.
 
 ## User Authentication
 
