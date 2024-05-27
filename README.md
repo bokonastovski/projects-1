@@ -1,18 +1,18 @@
 <h1 align="center">
-        <samp>&gt; Hey There!, I am
-                <b>Borjan Nastovski</b>
+        <samp>
+                <b>PROJECT 01 - BRAINSTER LABS</b>
         </samp>
 </h1>
 
 <p align="center"> 
   <samp>
     <br>
-    「 I am a front-end developer student from <b>Macedonia</b> 」
+    「 For this project I need to make a website that we can put all the projects that the students had made from the academies for marketing, design and coding.
+ 」
     <br>
     <br>
   </samp>
 </p>
-
 <details>  
   <ol>
     <li><a href="#about-me">About Me</a></li>
@@ -49,9 +49,6 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Javascript](https://img.shields.io/badge/Javascript-F0DB4F?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F0DB4F)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![VSCode](https://img.shields.io/badge/Visual_Studio-0078d7?style=for-the-badge&logo=visual%20studio&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 

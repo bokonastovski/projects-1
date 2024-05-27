@@ -1,0 +1,611 @@
+/* CSS RESETS */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(235, 235, 60);
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* COMING SOON PAGE */
+.background {
+  background-color: rgb(235, 235, 60);
+  background-image: radial-gradient(
+      at 3% 2%,
+      hsla(0, 100%, 50%, 0.5) 0,
+      hsla(359, 94%, 64%, 0) 50%
+    ),
+    radial-gradient(
+      at 82% 67%,
+      hsla(0, 100%, 50%, 0.5) 0,
+      hsla(319, 91%, 67%, 0) 50%
+    );
+  height: 100vh;
+}
+
+.background img {
+  width: 150px;
+}
+
+.background input,
+.background button {
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  color: white;
+  background-color: #000;
+  border-radius: 2rem;
+  outline-style: none;
+}
+
+.background input:focus,
+.background button:focus {
+  border: 2px solid white;
+}
+
+.comingsoon-form input:-webkit-autofill,
+.comingsoon-form input:-webkit-autofill:hover,
+.comingsoon-form input:-webkit-autofill:focus,
+.comingsoon-form input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px black inset !important;
+  -webkit-text-fill-color: white;
+}
+
+.heading {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.heading h1 {
+  font-size: 6rem;
+  font-style: italic;
+  color: black;
+}
+
+.heading p {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.icons {
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icons ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.icons i {
+  font-size: 2rem;
+  color: black;
+}
+
+.icons i:hover {
+  color: white;
+}
+
+/* FORM VALIDATION */
+
+.error {
+  display: block;
+  color: red;
+  font-size: 1rem;
+  height: 1rem;
+}
+
+/* BUTTON */
+.btn-style {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+
+/* WRAPPERS */
+.wrapper-90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* PADDING */
+.padding {
+  padding: 2rem 0;
+}
+
+/* NAVBAR */
+.logo:hover {
+  transform: scale(1.5);
+}
+.logo {
+  transition: transform 1s;
+}
+
+nav img {
+  width: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  font-weight: 600;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.d-none-style {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  visibility: hidden;
+  z-index: 999;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.sidebar li:nth-child(2) {
+  margin-top: 8rem;
+}
+
+.sidebar li:not(:first-child) {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar li:last-child {
+  margin-top: 1rem;
+}
+
+.sidebar .fa-xmark {
+  padding-top: 1rem;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 21.25px;
+}
+
+.sidebar a {
+  color: white;
+}
+
+/* HERO */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./images/pexels-max-rahubovskiy-6794925.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  transition: 1s;
+}
+
+.hero:hover h1 {
+  font-size: 5rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  transition: all 1s ease;
+}
+
+/* FILTERS */
+.filter-item,
+.card-item {
+  flex-basis: 33.333%;
+}
+
+.filter-item:not(:last-child) {
+  border-right: 1px solid lightgray;
+}
+
+.filters h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.fa-circle-check {
+  font-size: 1.5rem;
+}
+
+input:checked + label {
+  background-color: red !important;
+  color: black !important;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.check {
+  visibility: hidden;
+}
+
+input:checked + label .check {
+  visibility: visible;
+}
+
+input.checkbox:checked + label:before {
+  content: "";
+}
+
+label {
+  cursor: pointer;
+}
+
+/* CARDS */
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.card-container {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 8rem;
+}
+
+.gallery-cards {
+  margin-right: -25px;
+}
+
+.coding span {
+  background-color: yellow;
+}
+
+.design span {
+  background-color: aqua;
+}
+
+.marketing span {
+  background-color: chocolate;
+}
+
+.date {
+  font-size: 0.8rem;
+}
+
+.flex-33 {
+  flex-basis: 33.333%;
+}
+
+.flex-inner {
+  margin-right: 25px;
+  margin-bottom: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card {
+  transition: transform 1s;
+}
+
+/* LOAD MORE BUTTON */
+#load-more {
+  display: none;
+  text-transform: uppercase;
+}
+
+/* STUDENTI */
+.shadow-bottom {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 8px;
+}
+
+.studenti-heading {
+  margin: 175px 0;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+/* FORM */
+form {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.wrapper-75 {
+  width: 75%;
+  margin: 0 auto 350px;
+}
+
+label {
+  display: block;
+}
+
+.wrapper-75 input,
+select,
+.button {
+  width: 100%;
+  padding: 1.5em;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+select .button {
+  padding: 26px 1rem;
+  font-weight: 600;
+}
+
+input:focus,
+select:focus,
+.button:focus {
+  outline: none;
+}
+
+form .btn-style {
+  width: 100%;
+  border: none;
+  padding: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+form ::placeholder {
+  font-style: italic;
+  color: lightgray;
+}
+
+/* DROPDOWN */
+.select-group {
+  position: relative;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+
+  background-color: white;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  padding: 4px;
+  transform: rotate(45deg);
+}
+
+.option {
+  display: none;
+}
+
+.dropdown {
+  margin-top: 1rem;
+  position: absolute;
+  width: 96%;
+}
+
+.select-item {
+  background-color: white;
+  padding: 1em 1.5em;
+}
+
+.select-item:hover {
+  background-color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.dropdown input:checked + label {
+  background-color: white !important;
+}
+
+/* FORM VALIDATION */
+
+.error {
+  display: block;
+  color: red;
+  font-size: 1rem;
+  height: 1rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #302f38;
+  color: white;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 350px;
+  }
+
+  .d-none-tablet {
+    display: none !important;
+  }
+
+  .d-none-style {
+    display: block;
+  }
+
+  .padding {
+    padding: 0.5rem 0;
+  }
+
+  .fa-bars {
+    font-size: 2rem;
+  }
+  .filter-item:not(:last-child) {
+    border-bottom: 1px solid lightgray;
+    border-right: 0;
+  }
+
+  .flex-33 {
+    flex-basis: 50%;
+  }
+
+  .flex-inner:not(:nth-child(2n + 1)) {
+    margin-right: 0px;
+  }
+
+  #load-more {
+    display: block;
+  }
+
+  .card-body span {
+    font-size: 0.9rem;
+  }
+
+  .card-container {
+    width: 90%;
+  }
+
+  .studenti-heading {
+    width: 90%;
+    margin: 90px auto;
+    font-size: 4.75rem;
+    font-weight: 600;
+  }
+
+  .wrapper-75 {
+    width: 90%;
+    margin-bottom: 200px;
+  }
+
+  .padding-bottom {
+    padding-bottom: 15rem;
+  }
+
+  .gallery-cards .card-js {
+    display: none;
+  }
+
+  .gallery-cards .card-js:nth-of-type(1),
+  .gallery-cards .card-js:nth-of-type(2),
+  .gallery-cards .card-js:nth-of-type(3),
+  .gallery-cards .card-js:nth-of-type(4),
+  .gallery-cards .card-js:nth-of-type(5),
+  .gallery-cards .card-js:nth-of-type(6) {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .sidebar {
+    width: 100%;
+  }
+
+  .hero {
+    height: 30vh;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero:hover h1 {
+    font-size: 3rem;
+  }
+
+  .background img {
+    width: 75px;
+  }
+
+  .background h1 {
+    font-size: 4rem;
+  }
+
+  .background p {
+    font-size: 1rem;
+  }
+
+  .flex-33 {
+    flex-basis: 100%;
+  }
+
+  .flex-inner {
+    margin-right: 0px;
+  }
+
+  .gallery-cards {
+    margin-right: 0px;
+  }
+
+  .card-container {
+    padding-bottom: 4rem;
+  }
+
+  h2 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+
+  .dropdown {
+    width: 94%;
+    margin-top: 0.5rem;
+  }
+
+  .studenti-heading {
+    width: 90%;
+    margin: 45px auto;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .wrapper-75 {
+    margin-bottom: 100px;
+  }
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(235, 235, 60);
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(232, 2, 2);
+}

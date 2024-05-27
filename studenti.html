@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brainster Labs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="shadow-bottom">
+      <nav
+        class="d-flex justify-content-between wrapper-90 padding align-items-center"
+      >
+        <a href="index.html" class="logo"
+          ><img src="./images/Brainster.co_.png" alt="Brainster"
+        /></a>
+        <ul class="d-flex d-none-tablet">
+          <li><a href="comingsoon.html">Академија за маркетинг</a></li>
+          <li><a href="comingsoon.html">Академија за програмирање</a></li>
+          <li><a href="comingsoon.html">Академија за data science</a></li>
+          <li><a href="comingsoon.html">Академија за дизајн</a></li>
+        </ul>
+
+        <ul class="flex-column sidebar align-items-start justify-content-start">
+          <li onclick="hideSidebar()">
+            <a href="#"><i class="fa-solid fa-xmark"></i></a>
+          </li>
+          <li><a href="comingsoon.html">Академија за маркетинг</a></li>
+          <li><a href="comingsoon.html">Академија за програмирање</a></li>
+          <li><a href="comingsoon.html">Академија за data science</a></li>
+          <li><a href="comingsoon.html">Академија за дизајн</a></li>
+          <li>
+            <a class="btn-style" href="studenti.html">Вработи наш студент</a>
+          </li>
+        </ul>
+        <a class="btn-style d-none-tablet" href="studenti.html"
+          >Вработи наш студент</a
+        >
+        <i onclick="showSidebar()" class="d-none-style fa-solid fa-bars"></i>
+      </nav>
+    </div>
+
+    <h1 class="studenti-heading">Вработи студенти</h1>
+
+    <!-- FORM -->
+    <div class="wrapper-75">
+      <form id="form" class="vrabotistudenti-form">
+        <div class="row align-items-end">
+          <div class="col-12 col-lg-6">
+            <label class="mb-1" for="Name">Име и презиме</label>
+            <input type="text" id="Name" placeholder="Вашето име и презиме" />
+            <span class="error" id="name_error"></span>
+          </div>
+          <div class="col-12 col-lg-6">
+            <label class="mt-4 mb-1" for="Company">Име на компанија</label>
+            <input
+              type="text"
+              id="Company"
+              placeholder="Име на вашата компанија"
+            />
+            <span class="error" id="company_error"></span>
+          </div>
+          <div class="col-12 col-lg-6">
+            <label class="mt-4 mb-1" for="Email">Контакт имејл</label>
+            <input
+              type="email"
+              id="Email"
+              placeholder="Контакт имејл на вашата компанија"
+            />
+            <span class="error" id="email_error"></span>
+          </div>
+          <div class="col-12 col-lg-6">
+            <label class="mt-4 mb-1" for="Phone">Контакт телефон</label>
+            <input
+              type="number"
+              id="Phone"
+              placeholder="Контакт телефон на вашата компанија"
+            />
+            <span class="error" id="phone_error"></span>
+          </div>
+
+          <div class="col-12 col-lg-6 select-group" id="padding-bottom">
+            <label class="mt-4 mb-1" for="button">Тип на студенти</label>
+            <button class="button" id="button">
+              <span id="select-label">Изберете тип на студент</span>
+              <div class="arrow"></div>
+            </button>
+            <div class="error" id="dropdown_error"></div>
+            <div id="dropdown" class="dropdown hidden">
+              <label
+                class="select-item border-bottom border-light-subtle rounded-top-2"
+                for="marketing"
+                >Студенти од маркетинг</label
+              >
+              <input
+                class="option"
+                id="marketing"
+                type="radio"
+                name="tip-student"
+                value="marketing"
+              />
+              <label
+                class="select-item border-bottom border-light-subtle"
+                for="coding"
+                >Студенти од програмирање</label
+              >
+              <input
+                class="option"
+                id="coding"
+                type="radio"
+                name="tip-student"
+                value="coding"
+              />
+              <label
+                class="select-item border-bottom border-light-subtle"
+                for="data-science"
+                >Студенти од data-science</label
+              >
+              <input
+                class="option"
+                id="data-science"
+                type="radio"
+                name="tip-student"
+                value="data-science"
+              />
+              <label class="select-item rounded-bottom-2" for="design"
+                >Студенти од дизајн</label
+              >
+              <input
+                class="option"
+                id="design"
+                type="radio"
+                name="tip-student"
+                value="design"
+              />
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <button
+              type="submit"
+              class="btn-style d-flex justify-content-center mt-4"
+            >
+              Испрати
+            </button>
+            <div class="error"></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- FOOTER -->
+    <footer class="text-center py-3 fw-bold">Изработено со &#128150 од студентите на Brainster</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="vrabotiStudent.js"></script>
+    <script src="sidebar.js"></script>
+  </body>
+</html>
