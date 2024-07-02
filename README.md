@@ -67,3 +67,4 @@ Some of my projects are already live. So feel free to check them out on the foll
 
 - [Project 01 - Brainster Labs](https://github.com/bokonastovski/projects-1/tree/01_BrainsterLabs)
 - [Project 02 - Safe Blink](https://github.com/bokonastovski/projects-1/tree/02_SafeBlink)
+- [Hackaton 01 - Sava Osiguruvanje](https://github.com/bokonastovski/projects-1/tree/Hackaton01-SavaOsiguruvanje)
